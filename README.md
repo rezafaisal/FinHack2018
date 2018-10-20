@@ -8,6 +8,7 @@ Kasus yang ada pada event ini adalah:
 
 ## Fraud Detection
 Untuk mencegah dan mendeteksi fraud, bank wajib memiliki dan menerapkan strategi anti fraud yang efektif. Hal ini bisa dilakukan dengan menganalisa data transaksi untuk mencari pola-pola yang mencurigakan sehingga mempermudah identifikasi suatu transaksi sebagai transaksi yang sah atau bukan. Hasilkanlah solusi model Fraud Detection yang canggih dengan memanfaatkan dataset yang sudah kami sediakan.
+
 Dataset train pada kasus ini berjumlah 13.125 sample dengan feature sebagai berikut:
 ```
  [1] "X"                          "id_tanggal_transaksi_awal"  "tanggal_transaksi_awal"    
