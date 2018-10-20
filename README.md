@@ -31,7 +31,7 @@ Untuk menyelesaikan kasus ini kami melakukan beberapa proses, yaitu:
 - Membersihkan sample yang memiliki kemiripan pada class mayoritas. 
 - Melakukan penyeimbangan jumlah sample kedua class dengan metode undersampling dan oversampling.
 - Membuat model dengan algoritmat Random Forest.
-Berikut adalah hasil perhitungan kinerja model dengan ROC.
+Berikut adalah hasil perhitungan kinerja model dengan ROC yang saya dapatkan.
 
 Metode | ROC | Sens      | Spec
 ------- | ---------------- | ---------- | ---------:
@@ -40,6 +40,8 @@ Undersampling | 0.8759569 | 0.8276226 | 0.7747253
 Oversampling | 0.8867366 | 0.9809032 | 0.4296703
 ROSE | 0.7519298 | 0.9824200 | 0.19780220
 SMOTE | 0.8787502 | 0.9129022 | 0.6351648
+
+Nilai ROC di atas masih jauh di bawah nilai peserta lain yang memiliki nilai ROC diantara 0.9088 - 0.925.
 
 ## Credit Scoring
 Pemberian pinjaman adalah salah satu proses bisnis utama sebuah bank. Bank dituntut untuk mampu mengelola pinjaman nasabah-nasabahnya dengan cermat. Oleh karena itu, pada challenge ini, tugas anda adalah menghasilkan model prediksi yang dapat memperkirakan apakah seorang nasabah akan macet pembayaran pinjamannya atau tidak.
