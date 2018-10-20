@@ -47,5 +47,35 @@ Nilai ROC di atas masih jauh di bawah nilai peserta lain yang memiliki nilai ROC
 ## Credit Scoring
 Pemberian pinjaman adalah salah satu proses bisnis utama sebuah bank. Bank dituntut untuk mampu mengelola pinjaman nasabah-nasabahnya dengan cermat. Oleh karena itu, pada challenge ini, tugas anda adalah menghasilkan model prediksi yang dapat memperkirakan apakah seorang nasabah akan macet pembayaran pinjamannya atau tidak.
 
+Dataset train pada kasus ini berjumlah 15.493 sample dengan feature sebagai berikut:
+```
+ [1] "X"                                   "jumlah_kartu"                       
+ [3] "outstanding"                         "limit_kredit"                       
+ [5] "tagihan"                             "total_pemakaian_tunai"              
+ [7] "total_pemakaian_retail"              "sisa_tagihan_tidak_terbayar"        
+ [9] "kode_cabang"                         "rasio_pembayaran"                   
+[11] "persentasi_overlimit"                "rasio_pembayaran_3bulan"            
+[13] "rasio_pembayaran_6bulan"             "skor_delikuensi"                    
+[15] "flag_kredit_macet"                   "jumlah_tahun_sejak_pembukaan_kredit"
+[17] "total_pemakaian"                     "sisa_tagihan_per_jumlah_kartu"      
+[19] "sisa_tagihan_per_limit"              "total_pemakaian_per_limit"          
+[21] "pemakaian_3bln_per_limit"            "pemakaian_6bln_per_limit"           
+[23] "utilisasi_3bulan"                    "utilisasi_6bulan"
+```
+Class label atau variable response dari data di atas adalah flag_kredit_macet yang bernilai 1 untuk transaksi fraud dan 0 untuk transaksi normal. Berikut ini adalah jumlah sample untuk masing-masing class label.
+```
+    0     1 
+14134  1359
+```
+Cara yang saya lakukan untuk menyelesaikan kasus ini adalah sama dengan cara pada kasus sebelumnya. Berikut adalah hasil perhitungan kinerja model dengan ROC yang saya dapatkan.
+
+Metode | ROC | Sens      | Spec
+------- | ---------------- | ---------- | ---------:
+Original | 0.8917839 | 0.9873698 | 0.4241758
+Undersampling | 0.8759569 | 0.8276226 | 0.7747253
+Oversampling | 0.8867366 | 0.9809032 | 0.4296703
+ROSE | 0.7519298 | 0.9824200 | 0.19780220
+SMOTE | 0.8787502 | 0.9129022 | 0.6351648
+
 ## ATM Cash Optimization
 Sebuah ATM yang sering kehabisan uang tunai dapat memberikan pengalaman yang kurang menyenangkan bagi nasabah. Namun, uang tunai di ATM yang mengendap terlalu lama juga dapat menghambat perputaran uang di bank. Berdasarkan permasalahan tersebut anda diharapkan dapat menghasilkan model prediksi yang dapat meningkatkan efisiensi pengelolaan uang di ATM.
