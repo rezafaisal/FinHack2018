@@ -30,7 +30,7 @@ Dari data tersebut maka dapat diketahui bahwa ini adalah kasus klasifikasi data 
 Untuk menyelesaikan kasus ini kami melakukan beberapa proses, yaitu:
 - Membersihkan sample yang memiliki kemiripan pada class mayoritas. 
 - Melakukan penyeimbangan jumlah sample kedua class dengan metode undersampling dan oversampling.
-- Membuat model dengan algoritmat Random Forest.
+- Membuat model dengan algoritmat [Random Forest] [http://https://www.rdocumentation.org/packages/randomForest/versions/4.6-14/topics/randomForest].
 Berikut adalah hasil perhitungan kinerja model dengan ROC yang saya dapatkan.
 
 Metode | ROC | Sens      | Spec
