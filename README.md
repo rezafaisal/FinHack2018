@@ -80,7 +80,7 @@ Oversampling | 0.8944726 | 0.9535795 | 0.4731414
 ROSE | 0.7496470 | 0.7565760 | 0.5150667
 SMOTE | 0.8872079 | 0.8689798 | 0.7019617
 
-Nilai ROC peserta lain adalah antara 0.870 - 0.877.
+Tetapi saat model saya digunakan untuk memprediksi dataset test, maka nilai ROC yang didapat adalah 0.852 sedangkan nilai ROC peserta lain adalah antara 0.870 - 0.877.
 
 ## ATM Cash Optimization
 Sebuah ATM yang sering kehabisan uang tunai dapat memberikan pengalaman yang kurang menyenangkan bagi nasabah. Namun, uang tunai di ATM yang mengendap terlalu lama juga dapat menghambat perputaran uang di bank. Berdasarkan permasalahan tersebut anda diharapkan dapat menghasilkan model prediksi yang dapat meningkatkan efisiensi pengelolaan uang di ATM.
@@ -101,4 +101,5 @@ Kasus ini bertujuan untuk melakukan prakiraan nilai Withdrawals pada ATM dengan 
 ```
 [1] "No.ATM"      "Date"        "Withdrawals"
 ```
-Dataset dengan feature-feature ini disimpan pada file atm_train.arima.csv, yang selanjutnya akan digunakan pada proses pembuatan model prediksi.
+Dataset dengan feature-feature ini disimpan pada file atm_train.arima.csv, yang selanjutnya akan digunakan pada proses pembuatan model prediksi. Saya menggunakan Auto Arima untuk membuat model prediksi data time series kasus ini. Kami berasumsi ini adalah kasus data seasonal time series. Jadi sebelum membangun model, terlebih dahulu data diconvert menjadi data seasonal time series dengan frequensi 7, yang sama artinya dengan mingguan.
+Hasil dari prediksi kami memiliki nilai 0.49, masih jauh lebih rendah jika dibandingkan peserta lain yang memiliki nilai di antara 0.579-0.6043.
