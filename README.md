@@ -33,11 +33,6 @@ Untuk menyelesaikan kasus ini kami melakukan beberapa proses, yaitu:
 - Membuat model dengan algoritmat Random Forest.
 Berikut adalah hasil perhitungan kinerja model dengan ROC.
 
-Metode |ROC | Sens | Spec
--------------------------
-Original | 0.8917839 | 0.9873698 | 0.4241758
-Oversampling | 0.8759569 | 0.8276226 | 0.7747253
-
 Metode | ROC | Sens      | Spec
 ------- | ---------------- | ---------- | ---------:
 Original | 0.8917839 | 0.9873698 | 0.4241758
