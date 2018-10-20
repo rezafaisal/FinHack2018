@@ -38,11 +38,10 @@ Metode |ROC | Sens | Spec
 Original | 0.8917839 | 0.9873698 | 0.4241758
 Oversampling | 0.8759569 | 0.8276226 | 0.7747253
 
-Name | Lunch order | Spicy      | Owes
+Metode | ROC | Sens      | Spec
 ------- | ---------------- | ---------- | ---------:
-Joan  | saag paneer | medium | $11
-Sally  | vindaloo        | mild       | $14
-Erin   | lamb madras | HOT      | $5
+Original | 0.8917839 | 0.9873698 | 0.4241758
+Oversampling | 0.8759569 | 0.8276226 | 0.7747253
 
 ## Credit Scoring
 Pemberian pinjaman adalah salah satu proses bisnis utama sebuah bank. Bank dituntut untuk mampu mengelola pinjaman nasabah-nasabahnya dengan cermat. Oleh karena itu, pada challenge ini, tugas anda adalah menghasilkan model prediksi yang dapat memperkirakan apakah seorang nasabah akan macet pembayaran pinjamannya atau tidak.
