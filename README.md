@@ -6,6 +6,9 @@ Kasus yang ada pada event ini adalah:
 - Credit Scoring.
 - ATM Cash Optimization.
 
+Code Sample ini ditulis dengan R dengan tool Visual Studio 2017.
+![R Tool for Visual Studio](https://github.com/rezafaisal/FinHack2018/blob/master/images/finhack1.JPG)
+
 ## Fraud Detection
 Untuk mencegah dan mendeteksi fraud, bank wajib memiliki dan menerapkan strategi anti fraud yang efektif. Hal ini bisa dilakukan dengan menganalisa data transaksi untuk mencari pola-pola yang mencurigakan sehingga mempermudah identifikasi suatu transaksi sebagai transaksi yang sah atau bukan. Hasilkanlah solusi model Fraud Detection yang canggih dengan memanfaatkan dataset yang sudah kami sediakan.
 
