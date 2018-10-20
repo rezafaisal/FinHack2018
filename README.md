@@ -84,10 +84,12 @@ Sebuah ATM yang sering kehabisan uang tunai dapat memberikan pengalaman yang kur
 
 Dataset train kasus ini memiliki feature-feature sebagai berikut:
 ```
- [1] "X1"                   "no..ATM"              "date"                 "currency"             "saldo.awal"          
- [6] "Deliveries"           "Returns"              "unplanned_deliveries" "unplanned_returns"    "deposit"             
-[11] "Pre.Withdrawals"      "Withdrawals"          "saldo.akhir"          "Trips"                "Balance.Cost"        
-[16] "Carrier.Cost"         "uang_idle"  
+ [1] "X1"                   "no..ATM"              "date"                
+ [4] "currency"             "saldo.awal"           "Deliveries"          
+ [7] "Returns"              "unplanned_deliveries" "unplanned_returns"   
+[10] "deposit"              "Pre.Withdrawals"      "Withdrawals"         
+[13] "saldo.akhir"          "Trips"                "Balance.Cost"        
+[16] "Carrier.Cost"         "uang_idle"           
 ```
 
 Kasus ini bertujuan untuk melakukan prakiraan nilai Withdrawals pada ATM dengan nomor tertentu di masa depan. Untuk itu data di atas akan difilter untuk mempunyai kolom sebagai berikut ini:
