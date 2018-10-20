@@ -81,3 +81,16 @@ Nilai ROC peserta lain adalah antara 0.870 - 0.877.
 
 ## ATM Cash Optimization
 Sebuah ATM yang sering kehabisan uang tunai dapat memberikan pengalaman yang kurang menyenangkan bagi nasabah. Namun, uang tunai di ATM yang mengendap terlalu lama juga dapat menghambat perputaran uang di bank. Berdasarkan permasalahan tersebut anda diharapkan dapat menghasilkan model prediksi yang dapat meningkatkan efisiensi pengelolaan uang di ATM.
+
+Dataset train kasus ini memiliki feature-feature sebagai berikut:
+```
+ [1] "X1"                   "no..ATM"              "date"                 "currency"             "saldo.awal"          
+ [6] "Deliveries"           "Returns"              "unplanned_deliveries" "unplanned_returns"    "deposit"             
+[11] "Pre.Withdrawals"      "Withdrawals"          "saldo.akhir"          "Trips"                "Balance.Cost"        
+[16] "Carrier.Cost"         "uang_idle"  
+```
+
+Kasus ini bertujuan untuk melakukan prakiraan nilai Withdrawals pada ATM dengan nomor tertentu di masa depan. Untuk itu data di atas akan difilter untuk mempunyai kolom sebagai berikut ini:
+```
+[1] "No.ATM"      "Date"        "Withdrawals"
+```
