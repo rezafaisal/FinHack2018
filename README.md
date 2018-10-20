@@ -82,6 +82,8 @@ Nilai ROC peserta lain adalah antara 0.870 - 0.877.
 ## ATM Cash Optimization
 Sebuah ATM yang sering kehabisan uang tunai dapat memberikan pengalaman yang kurang menyenangkan bagi nasabah. Namun, uang tunai di ATM yang mengendap terlalu lama juga dapat menghambat perputaran uang di bank. Berdasarkan permasalahan tersebut anda diharapkan dapat menghasilkan model prediksi yang dapat meningkatkan efisiensi pengelolaan uang di ATM.
 
+Pada kasus ini peserta diberikan 1 poin untuk tiap tebakan yang memiliki error di bawah 25%, diukur dengan MAPE. Jumlah dataset test, berjumlah 74381 data, sehingga skor 100% didapatkan apabila peserta mendapatkan 74381 poin.
+
 Dataset train kasus ini memiliki feature-feature sebagai berikut:
 ```
  [1] "X1"                   "no..ATM"              "date"                
@@ -96,3 +98,4 @@ Kasus ini bertujuan untuk melakukan prakiraan nilai Withdrawals pada ATM dengan 
 ```
 [1] "No.ATM"      "Date"        "Withdrawals"
 ```
+Dataset dengan feature-feature ini disimpan pada file atm_train.arima.csv, yang selanjutnya akan digunakan pada proses pembuatan model prediksi.
