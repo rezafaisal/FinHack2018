@@ -62,7 +62,7 @@ Dataset train pada kasus ini berjumlah 15.493 sample dengan feature sebagai beri
 [21] "pemakaian_3bln_per_limit"            "pemakaian_6bln_per_limit"           
 [23] "utilisasi_3bulan"                    "utilisasi_6bulan"
 ```
-Class label atau variable response dari data di atas adalah flag_kredit_macet yang bernilai 1 untuk transaksi fraud dan 0 untuk transaksi normal. Berikut ini adalah jumlah sample untuk masing-masing class label.
+Class label atau variable response dari data di atas adalah flag_kredit_macet yang bernilai 1 untuk kredit macet dan 0 untuk kredit lancar. Berikut ini adalah jumlah sample untuk masing-masing class label.
 ```
     0     1 
 14134  1359
