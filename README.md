@@ -71,11 +71,13 @@ Cara yang saya lakukan untuk menyelesaikan kasus ini adalah sama dengan cara pad
 
 Metode | ROC | Sens      | Spec
 ------- | ---------------- | ---------- | ---------:
-Original | 0.8917839 | 0.9873698 | 0.4241758
-Undersampling | 0.8759569 | 0.8276226 | 0.7747253
-Oversampling | 0.8867366 | 0.9809032 | 0.4296703
-ROSE | 0.7519298 | 0.9824200 | 0.19780220
-SMOTE | 0.8787502 | 0.9129022 | 0.6351648
+Original | 0.8954414 | 0.9738138 | 0.3436483
+Undersampling | 0.8872178 | 0.7903321 | 0.8241290
+Oversampling | 0.8944726 | 0.9535795 | 0.4731414
+ROSE | 0.7496470 | 0.7565760 | 0.5150667
+SMOTE | 0.8872079 | 0.8689798 | 0.7019617
+
+Nilai ROC peserta lain adalah antara 0.870 - 0.877.
 
 ## ATM Cash Optimization
 Sebuah ATM yang sering kehabisan uang tunai dapat memberikan pengalaman yang kurang menyenangkan bagi nasabah. Namun, uang tunai di ATM yang mengendap terlalu lama juga dapat menghambat perputaran uang di bank. Berdasarkan permasalahan tersebut anda diharapkan dapat menghasilkan model prediksi yang dapat meningkatkan efisiensi pengelolaan uang di ATM.
