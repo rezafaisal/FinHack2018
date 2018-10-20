@@ -21,9 +21,23 @@ Dataset train pada kasus ini berjumlah 13.125 sample dengan feature sebagai beri
 [25] "maksimum_nilai_transaksi"   "minimum_nilai_transaksi"    "rata_rata_jumlah_transaksi"
 [28] "flag_transaksi_fraud"
 ```
-Kasus ini adalah klasifikasi dua class dengan data tidak seimbang, artinya ada class yang memiliki jumlah sample yang lebih besar daripada class yang lain. Class yang 
+Class label atau variable response dari data di atas adalah flag_transaksi_fraud yang bernilai 1 untuk transaksi fraud dan 0 untuk transaksi normal. Berikut ini adalah jumlah sample untuk masing-masing class label.
+```
+    0     1 
+12215   910
+```
+Dari data tersebut maka dapat diketahui bahwa ini adalah kasus klasifikasi data tidak seimbang, karena ada class yang memiliki jumlah sample yang lebih besar daripada class yang lain. Hal ini akan mempengaruhi akurasi prediksi terhadap class minoritas, sehingga akan menyebabkan kesalahan dalam memprediksi class minoritas.
 Untuk menyelesaikan kasus ini kami melakukan beberapa proses, yaitu:
-- Membersihkan sample yang memiliki kemiripan pada class mayoritas. Hasilnya berhasil dikurangi kurang lebih 
+- Membersihkan sample yang memiliki kemiripan pada class mayoritas. 
+- Melakukan penyeimbangan jumlah sample kedua class dengan metode undersampling dan oversampling.
+- Membuat model dengan algoritmat Random Forest.
+Berikut adalah hasil perhitungan kinerja model dengan ROC.
+```
+Metode |ROC | Sens | Spec
+--------------------------
+Original | 0.8917839 | 0.9873698 | 0.4241758
+Oversampling | 0.8759569 | 0.8276226 | 0.7747253
+```
 
 ## Credit Scoring
 Pemberian pinjaman adalah salah satu proses bisnis utama sebuah bank. Bank dituntut untuk mampu mengelola pinjaman nasabah-nasabahnya dengan cermat. Oleh karena itu, pada challenge ini, tugas anda adalah menghasilkan model prediksi yang dapat memperkirakan apakah seorang nasabah akan macet pembayaran pinjamannya atau tidak.
